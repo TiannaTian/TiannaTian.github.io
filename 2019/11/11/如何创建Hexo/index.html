@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="常用语句 12345hexo g   &#x2F;&#x2F;生成静态页面hexo s   &#x2F;&#x2F;本地运行hexo new page.md &#x2F;&#x2F;新建pagehexo clean &#x2F;&#x2F;清除现有静态页面hexo d   &#x2F;&#x2F;部署到git 参考文章Hexo github搭建博客: https:&#x2F;&#x2F;myfire2014.github.io&#x2F;如何设置电脑和github的链接: https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;">
+<meta name="keywords" content="一些记录，H5开发，问题，解决方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何建立一个Hexo博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BAHexo&#x2F;index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="常用语句 12345hexo g   &#x2F;&#x2F;生成静态页面hexo s   &#x2F;&#x2F;本地运行hexo new page.md &#x2F;&#x2F;新建pagehexo clean &#x2F;&#x2F;清除现有静态页面hexo d   &#x2F;&#x2F;部署到git 参考文章Hexo github搭建博客: https:&#x2F;&#x2F;myfire2014.github.io&#x2F;如何设置电脑和github的链接: https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-14T15:16:24.816Z">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/11/11/如何创建Hexo/"/>
+
+
+
+
+
+  <title>如何建立一个Hexo博客 | 我的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">记录一些问题</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BAHexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">如何建立一个Hexo博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-11T21:15:54+08:00">
+                2019-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="常用语句"><a href="#常用语句" class="headerlink" title="常用语句"></a>常用语句</h4> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo g   //生成静态页面</span><br><span class="line">hexo s   //本地运行</span><br><span class="line">hexo new page.md //新建page</span><br><span class="line">hexo clean //清除现有静态页面</span><br><span class="line">hexo d   //部署到git</span><br></pre></td></tr></table></figure>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>Hexo github搭建博客: <a href="https://myfire2014.github.io/" target="_blank" rel="noopener">https://myfire2014.github.io/</a><br>如何设置电脑和github的链接: <a href="https://www.jianshu.com/p/5095b1e81d40" target="_blank" rel="noopener">https://www.jianshu.com/p/5095b1e81d40</a><br>用github建立自己的博客: <a href="https://blog.csdn.net/chengde6896383/article/details/85098814" target="_blank" rel="noopener">https://blog.csdn.net/chengde6896383/article/details/85098814</a><br>deploy失败: <a href="https://blog.csdn.net/jingtingfengguo/article/details/51892864" target="_blank" rel="noopener">https://blog.csdn.net/jingtingfengguo/article/details/51892864</a></p>
+<h3 id="自己建立过程中遇到的问题"><a href="#自己建立过程中遇到的问题" class="headerlink" title="自己建立过程中遇到的问题"></a>自己建立过程中遇到的问题</h3><h6 id="向https-github-com-settings-keys上粘贴ssh-keys的时候要粘贴-pub的"><a href="#向https-github-com-settings-keys上粘贴ssh-keys的时候要粘贴-pub的" class="headerlink" title="向https://github.com/settings/keys上粘贴ssh keys的时候要粘贴.pub的"></a>向<a href="https://github.com/settings/keys上粘贴ssh" target="_blank" rel="noopener">https://github.com/settings/keys上粘贴ssh</a> keys的时候要粘贴.pub的</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Users/tianteng/.ssh  id_rsa.pub</span><br></pre></td></tr></table></figure>
+<h6 id="需要查看自己的git-config，不对的话需要重新设置"><a href="#需要查看自己的git-config，不对的话需要重新设置" class="headerlink" title="需要查看自己的git config，不对的话需要重新设置"></a>需要查看自己的git config，不对的话需要重新设置</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global --list</span><br><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"email@email.com"</span></span><br></pre></td></tr></table></figure>
+<h6 id="修改完代码push没有反应"><a href="#修改完代码push没有反应" class="headerlink" title="修改完代码push没有反应"></a>修改完代码push没有反应</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">删除.deploy_git的文件夹里面的内容，这个是前面的主机生成的网站项目内容，与当前的不兼容。</span><br><span class="line">hexo clean</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h6 id="一直deploy失败，最后发现是repo地址写错了-一定要是-git-github-com-YourGitHubName-YourGitHubName-github-io-git"><a href="#一直deploy失败，最后发现是repo地址写错了-一定要是-git-github-com-YourGitHubName-YourGitHubName-github-io-git" class="headerlink" title="一直deploy失败，最后发现是repo地址写错了,一定要是 git@github.com:YourGitHubName/YourGitHubName.github.io.git"></a>一直deploy失败，最后发现是repo地址写错了,一定要是 <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:YourGitHubName/YourGitHubName.github.io.git</h6><h3 id="最终创建的自己博客的地址"><a href="#最终创建的自己博客的地址" class="headerlink" title="最终创建的自己博客的地址:"></a>最终创建的自己博客的地址:</h3><p><a href="https://tiannatian.github.io/" target="_blank" rel="noopener">https://tiannatian.github.io/</a></p>
+<h5 id="用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题："><a href="#用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题：" class="headerlink" title="用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题："></a>用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题：</h5><p>首页：themes/next/_config.yml里面的menu:home，设置路由不能带空格，空格会造成跳转路由带个20%，导致无法跳转<br>归档、日志：themes/next/_config.yml里面的menu:archives，去掉“ || archives”部分，归档直接用了这个路由，会带上空格；<br>日志(themes/next/layout/_macro/sidebar.swig)用到了href=url_for(theme.menu.archives).split(‘||’)[0] | trim，导致路由跳错</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives).split('||')[0] | trim &#125;&#125;"</span>&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/11/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/11/PlatForm/" rel="prev" title="IosPlatForm">
+                IosPlatForm <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">TiannaTian</p>
+              <p class="site-description motion-element" itemprop="description">开发过程中遇到一些问题，记录下来防止遗忘</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用语句"><span class="nav-number">1.</span> <span class="nav-text">常用语句</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文章"><span class="nav-number"></span> <span class="nav-text">参考文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自己建立过程中遇到的问题"><span class="nav-number"></span> <span class="nav-text">自己建立过程中遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#向https-github-com-settings-keys上粘贴ssh-keys的时候要粘贴-pub的"><span class="nav-number">0.0.1.</span> <span class="nav-text">向https://github.com/settings/keys上粘贴ssh keys的时候要粘贴.pub的</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#需要查看自己的git-config，不对的话需要重新设置"><span class="nav-number">0.0.2.</span> <span class="nav-text">需要查看自己的git config，不对的话需要重新设置</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#修改完代码push没有反应"><span class="nav-number">0.0.3.</span> <span class="nav-text">修改完代码push没有反应</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#一直deploy失败，最后发现是repo地址写错了-一定要是-git-github-com-YourGitHubName-YourGitHubName-github-io-git"><span class="nav-number">0.0.4.</span> <span class="nav-text">一直deploy失败，最后发现是repo地址写错了,一定要是 git@github.com:YourGitHubName/YourGitHubName.github.io.git</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最终创建的自己博客的地址"><span class="nav-number"></span> <span class="nav-text">最终创建的自己博客的地址:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题："><span class="nav-number">0.1.</span> <span class="nav-text">用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TiannaTian</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

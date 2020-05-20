@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="H5日常开发会用到的语句," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="copy文件从一个路径到另一个路径:cp -r 原来文件夹路径&#x2F;  目标文件夹路径&#x2F; 关于前端起服务：前端为什么要起服务？为了解决跨域；直接通过浏览器打开是类似file:&#x2F;&#x2F;&#x2F;的访问形式，即file协议，起服务运行在服务器环境才可能解决跨域问题。本地页面ajax()请求本地页面，须通过服务器环境运行有什么方便的起服务的方法？用http-server可以方便地起本地服务。命令行：http-serve">
+<meta name="keywords" content="H5日常开发会用到的语句">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日常用到的开发语句">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;16&#x2F;dailyCode&#x2F;index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="copy文件从一个路径到另一个路径:cp -r 原来文件夹路径&#x2F;  目标文件夹路径&#x2F; 关于前端起服务：前端为什么要起服务？为了解决跨域；直接通过浏览器打开是类似file:&#x2F;&#x2F;&#x2F;的访问形式，即file协议，起服务运行在服务器环境才可能解决跨域问题。本地页面ajax()请求本地页面，须通过服务器环境运行有什么方便的起服务的方法？用http-server可以方便地起本地服务。命令行：http-serve">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-05-20T14:46:58.611Z">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/12/16/dailyCode/"/>
+
+
+
+
+
+  <title>日常用到的开发语句 | 我的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">记录一些问题</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/16/dailyCode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">日常用到的开发语句</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-16T21:15:54+08:00">
+                2019-12-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="copy文件从一个路径到另一个路径"><a href="#copy文件从一个路径到另一个路径" class="headerlink" title="copy文件从一个路径到另一个路径:"></a>copy文件从一个路径到另一个路径:</h5><p>cp -r 原来文件夹路径/  目标文件夹路径/</p>
+<h5 id="关于前端起服务："><a href="#关于前端起服务：" class="headerlink" title="关于前端起服务："></a>关于前端起服务：</h5><p>前端为什么要起服务？<br>为了解决跨域；直接通过浏览器打开是类似file:///的访问形式，即file协议，起服务运行在服务器环境才可能解决跨域问题。本地页面ajax()请求本地页面，须通过服务器环境运行<br>有什么方便的起服务的方法？<br>用http-server可以方便地起本地服务。<br>命令行：http-server -c -l</p>
+<h5 id="terminal更改文件夹性质的命令："><a href="#terminal更改文件夹性质的命令：" class="headerlink" title="terminal更改文件夹性质的命令："></a>terminal更改文件夹性质的命令：</h5><p>sudo chown -R userName:staff a「改变a文件夹的性质，从sudo改成userName用户就能操作」<br>ctrl+R+字符：搜索使用过的字符的语句，搜索完按右箭头即可定位到该语句<br>history：查找所有历史语句<br>grep:分组查找<br>ls -l：查看文件夹下所有文件，并展示读写权限<br>dig 域名：没接入cdn的域名可以查看域名对应的vip</p>
+<h5 id="cur测试页面（一定要带-I，不然返回的是html）："><a href="#cur测试页面（一定要带-I，不然返回的是html）：" class="headerlink" title="cur测试页面（一定要带-I，不然返回的是html）："></a>cur测试页面（一定要带-I，不然返回的是html）：</h5><p>curl -H ‘Host:页面host’ ‘http://具体vip/finance-gold/msjgold/homepage?orderSource=4’ -I<br>curl -H ‘Host:m.jdjygold.com’ ‘<a href="http://61.49.99.30/finance-gold/msjgold/homepage\?orderSource\=4&#39;" target="_blank" rel="noopener">http://61.49.99.30/finance-gold/msjgold/homepage\?orderSource\=4&#39;</a> -I<br>curl -v url可以用来测一个地址是否能正常访问(如果https证书不支持，会返回subjectAltName doses not match)</p>
+<h5 id="vue异步加载-import-在iphone5上面白屏的一个可能原因："><a href="#vue异步加载-import-在iphone5上面白屏的一个可能原因：" class="headerlink" title="vue异步加载(import) 在iphone5上面白屏的一个可能原因："></a>vue异步加载(import) 在iphone5上面白屏的一个可能原因：</h5><p>vue异步加载(import) 在iphone5上面白屏，原因是少引用了import ‘core-js/modules/es6.array.iterator’;，加上就可以了</p>
+<h5 id="几个有用的网站："><a href="#几个有用的网站：" class="headerlink" title="几个有用的网站："></a>几个有用的网站：</h5><p>测试页面性能的网站：<a href="http://www.mmtrix.com/evaluate/networkana/" target="_blank" rel="noopener">http://www.mmtrix.com/evaluate/networkana/</a><br>web开发笔记：<a href="https://xwenliang.cn/" target="_blank" rel="noopener">https://xwenliang.cn/</a><br>js算法与数据结构：<a href="https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md" target="_blank" rel="noopener">https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md</a><br>查兼容性的网站：<a href="https://caniuse.com/" target="_blank" rel="noopener">https://caniuse.com/</a></p>
+<h5 id="joyer-cli使用小技巧："><a href="#joyer-cli使用小技巧：" class="headerlink" title="joyer-cli使用小技巧："></a>joyer-cli使用小技巧：</h5><p>用import是异步加载，结合使用jsBundleRule可以把echart单独打包出来</p>
+<h5 id="查看使用了80端口的应用并关闭："><a href="#查看使用了80端口的应用并关闭：" class="headerlink" title="查看使用了80端口的应用并关闭："></a>查看使用了80端口的应用并关闭：</h5><p>sudo lsof -i tcp:80<br>sudo kill</p>
+<h5 id="flex布局不能显示点点点："><a href="#flex布局不能显示点点点：" class="headerlink" title="flex布局不能显示点点点："></a>flex布局不能显示点点点：</h5><p>给父级增加min-width:0</p>
+<h5 id="echart图加了swiper-no-swiping就不能点击了："><a href="#echart图加了swiper-no-swiping就不能点击了：" class="headerlink" title="echart图加了swiper-no-swiping就不能点击了："></a>echart图加了swiper-no-swiping就不能点击了：</h5><p>在最外层加@click时间，标记当前activeIndex，才处理好</p>
+<h5 id="用命令行生成文件夹的树状结构："><a href="#用命令行生成文件夹的树状结构：" class="headerlink" title="用命令行生成文件夹的树状结构："></a>用命令行生成文件夹的树状结构：</h5><p>1.安装tree brew install tree，<br>2.用命令tree -L 2 -I node_modules(显示两层，排除node-modules)；<br>一个小文章：<a href="https://www.cnblogs.com/richard-youth/p/6297827.html" target="_blank" rel="noopener">https://www.cnblogs.com/richard-youth/p/6297827.html</a></p>
+<h5 id="ios低版本手机滑动fixed按钮跟着滚动的问题："><a href="#ios低版本手机滑动fixed按钮跟着滚动的问题：" class="headerlink" title="ios低版本手机滑动fixed按钮跟着滚动的问题："></a>ios低版本手机滑动fixed按钮跟着滚动的问题：</h5><p>设置了-webkit-overflow-scrolling: touch;解决方法：body、html、wrap、content均设置width：100%，height：100%，在content上加webkit-overflow-scrolling: touch;既可以顺滑滚动，又可以fixed不跟随改动<br>——》引入其他问题：浏览器弹性滚动问题<br>把 -webkit-overflow-scrolling: touch;放在小div而不是放在body上的问题：快速上拉页面[还在弹性滑动的过程中]迅速得再向上拉，会出现页面整个被拉动的情况[上面是空白的样式]；拉动的问题和fixed+touch的问题无法同时解决，只能通过引入isScroll之类的问题解决<br>———》关联的问题：safari渲染问题<br>单页面应用画echart图的问题：从有echart的的页面跳入下一个页面[滑动一段距离之后]，再back的时候echart图出不来了。原因：body页面很长可以滑动，滑完点击跳入下一个页面，再返回的时候，页面渲染机制在把页面上滑之后就停止了，不会在echart图数据返回的时候渲染页面，因此白屏。如果把滑动限制在div里(body设置width:100%,height:100%)里可以解决这个问题。但是滑动限制div里会引起上面那个问题。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//解决单页面back回来不能渲染的问题</span><br><span class="line">       setTimeout(() =&gt; &#123;</span><br><span class="line">                window.scrollTo(0, 1);</span><br><span class="line">       &#125;, 100);</span><br></pre></td></tr></table></figure>
+
+<h5 id="ios8-4系统vue-history模式document-title在back回首页的时候无法设置上title："><a href="#ios8-4系统vue-history模式document-title在back回首页的时候无法设置上title：" class="headerlink" title="ios8.4系统vue history模式document.title在back回首页的时候无法设置上title："></a>ios8.4系统vue history模式document.title在back回首页的时候无法设置上title：</h5><p>经尝试使用iframe的hack方法可以解决。一定放在afterEach里！一定设置可正常访问的src！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">router.afterEach( (to,from)=&gt; &#123;</span><br><span class="line">    //埋点</span><br><span class="line">    <span class="keyword">if</span>( window.__qd__ &amp;&amp; window.__qd__.page)&#123;</span><br><span class="line">        window.__qd__.page(window.location.origin +to.fullPath);</span><br><span class="line">    &#125;</span><br><span class="line">     /* 设置页面title */</span><br><span class="line">     /* 路由发生变化修改页面title */</span><br><span class="line">     <span class="keyword">if</span> (to.meta &amp;&amp; to.meta.title) &#123;</span><br><span class="line">        document.title = to.meta.title;</span><br><span class="line">        //IOShack利用iframe的onload事件刷新页面</span><br><span class="line">          document.title = to.meta.title;</span><br><span class="line">          var iframe = document.createElement(<span class="string">'iframe'</span>);</span><br><span class="line">          iframe.style.visibility = <span class="string">'hidden'</span>;</span><br><span class="line">          iframe.style.width = <span class="string">'1px'</span>;</span><br><span class="line">          iframe.style.height = <span class="string">'1px'</span>;</span><br><span class="line">          iframe.src = <span class="string">'//m.jr.jd.com/favicon.ico'</span>; // 这里</span><br><span class="line">          iframe.onload = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">          setTimeout(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">              document.body.removeChild(iframe);</span><br><span class="line">          &#125;, 0);</span><br><span class="line">          &#125;;</span><br><span class="line">          document.body.appendChild(iframe);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="ios手机12-3-1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了："><a href="#ios手机12-3-1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了：" class="headerlink" title="ios手机12.3.1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了："></a>ios手机12.3.1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了：</h5><p>cp -r 原来文件夹路径/  目标文件夹路径/</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'body'</span>).on(<span class="string">'focus'</span>,<span class="string">'.jrm-layout-area input'</span>,<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">          setTimeout(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">       document.body.scrollTop = document.body.scrollHeight;</span><br><span class="line">     &#125;,200)</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="vue项目起服务提示There-are-multiple-modules-with-names-that-only-differ-in-casing"><a href="#vue项目起服务提示There-are-multiple-modules-with-names-that-only-differ-in-casing" class="headerlink" title="vue项目起服务提示There are multiple modules with names that only differ in casing"></a>vue项目起服务提示There are multiple modules with names that only differ in casing</h5><p>引入的文件路径大小写不对；如import A from “a” –》import A from “A”</p>
+<h5 id="vue项目transition和keep-alive"><a href="#vue项目transition和keep-alive" class="headerlink" title="vue项目transition和keep-alive"></a>vue项目transition和keep-alive</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"oneId"</span>&gt;</span><br><span class="line">        &lt;transition name=<span class="string">"onePage"</span> mode=<span class="string">"page-out-in"</span>&gt;</span><br><span class="line">            &lt;keep-alive&gt;</span><br><span class="line">                    &lt;router-view  v-if=<span class="string">"<span class="variable">$route</span>.meta.keepAlive"</span>&gt;&lt;/router-view&gt;  </span><br><span class="line">            &lt;/keep-alive&gt;</span><br><span class="line">        &lt;/transition&gt;</span><br><span class="line">        &lt;transition name=<span class="string">"onePage"</span> mode=<span class="string">"page-out-in"</span>&gt;</span><br><span class="line">            &lt;router-view  v-if=<span class="string">"!<span class="variable">$route</span>.meta.keepAlive"</span> :key=<span class="string">"'time'+new Date().getTime()"</span>&gt;&lt;/router-view&gt;</span><br><span class="line">         &lt;/transition&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/H5%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E4%BC%9A%E7%94%A8%E5%88%B0%E7%9A%84%E8%AF%AD%E5%8F%A5/" rel="tag"># H5日常开发会用到的语句</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/11/PlatForm/" rel="next" title="IosPlatForm">
+                <i class="fa fa-chevron-left"></i> IosPlatForm
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/05/20/explain/" rel="prev" title="explain">
+                explain <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">TiannaTian</p>
+              <p class="site-description motion-element" itemprop="description">开发过程中遇到一些问题，记录下来防止遗忘</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#copy文件从一个路径到另一个路径"><span class="nav-number">1.</span> <span class="nav-text">copy文件从一个路径到另一个路径:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关于前端起服务："><span class="nav-number">2.</span> <span class="nav-text">关于前端起服务：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#terminal更改文件夹性质的命令："><span class="nav-number">3.</span> <span class="nav-text">terminal更改文件夹性质的命令：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cur测试页面（一定要带-I，不然返回的是html）："><span class="nav-number">4.</span> <span class="nav-text">cur测试页面（一定要带-I，不然返回的是html）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vue异步加载-import-在iphone5上面白屏的一个可能原因："><span class="nav-number">5.</span> <span class="nav-text">vue异步加载(import) 在iphone5上面白屏的一个可能原因：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#几个有用的网站："><span class="nav-number">6.</span> <span class="nav-text">几个有用的网站：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#joyer-cli使用小技巧："><span class="nav-number">7.</span> <span class="nav-text">joyer-cli使用小技巧：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#查看使用了80端口的应用并关闭："><span class="nav-number">8.</span> <span class="nav-text">查看使用了80端口的应用并关闭：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#flex布局不能显示点点点："><span class="nav-number">9.</span> <span class="nav-text">flex布局不能显示点点点：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#echart图加了swiper-no-swiping就不能点击了："><span class="nav-number">10.</span> <span class="nav-text">echart图加了swiper-no-swiping就不能点击了：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用命令行生成文件夹的树状结构："><span class="nav-number">11.</span> <span class="nav-text">用命令行生成文件夹的树状结构：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ios低版本手机滑动fixed按钮跟着滚动的问题："><span class="nav-number">12.</span> <span class="nav-text">ios低版本手机滑动fixed按钮跟着滚动的问题：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ios8-4系统vue-history模式document-title在back回首页的时候无法设置上title："><span class="nav-number">13.</span> <span class="nav-text">ios8.4系统vue history模式document.title在back回首页的时候无法设置上title：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ios手机12-3-1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了："><span class="nav-number">14.</span> <span class="nav-text">ios手机12.3.1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vue项目起服务提示There-are-multiple-modules-with-names-that-only-differ-in-casing"><span class="nav-number">15.</span> <span class="nav-text">vue项目起服务提示There are multiple modules with names that only differ in casing</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#vue项目transition和keep-alive"><span class="nav-number">16.</span> <span class="nav-text">vue项目transition和keep-alive</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TiannaTian</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

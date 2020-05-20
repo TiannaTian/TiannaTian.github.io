@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="开发过程中遇到一些问题，记录下来防止遗忘">
+<meta name="keywords" content="一些记录，H5开发，问题，解决方法">
+<meta property="og:type" content="website">
+<meta property="og:title" content="我的博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="开发过程中遇到一些问题，记录下来防止遗忘">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>我的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">记录一些问题</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/dailySolution/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/20/dailySolution/" itemprop="url">dailySolution</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-20T23:00:00+08:00">
+                2020-05-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="Mac本里面怎么设置文件夹右键-服务-通过VSCode打开"><a href="#Mac本里面怎么设置文件夹右键-服务-通过VSCode打开" class="headerlink" title="Mac本里面怎么设置文件夹右键-服务-通过VSCode打开"></a>Mac本里面怎么设置文件夹右键-服务-通过VSCode打开</h5><p>1.启动Automator(可以通过搜索-Automator找到)<br>2.在右侧面板选择“服务”收到选定的“文件夹”，位于“Finder.app“，该选项是为了从Finder中接收一个文件夹；<br>3.在左侧面板选择”实用工具“，然后找到”运行Shell脚本“，把它拽到右侧面板里；<br>4.在右侧”运行Shell脚本“的面板里，选择Shell”/bin/bash“，传递输入“作为自变量”，然后修改Shell脚本如下：<br>hah</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> <span class="string">"<span class="variable">$@</span>"</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    open -a <span class="string">"Visual Studio Code"</span> <span class="string">"<span class="variable">$f</span>"</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>保存为“Open With VSCode”后，打开Finder，选中一个文件夹，点击右键，“服务”，就可以看到“Open With VSCode”菜单。<br>参考文档地址：<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1099503821472096" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1022910821149312/1099503821472096</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/explain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/20/explain/" itemprop="url">explain</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-20T22:54:30+08:00">
+                2020-05-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="新建md的时候出现多次打包不出来的情况；再多建一个新md文件就好了"><a href="#新建md的时候出现多次打包不出来的情况；再多建一个新md文件就好了" class="headerlink" title="新建md的时候出现多次打包不出来的情况；再多建一个新md文件就好了"></a>新建md的时候出现多次打包不出来的情况；再多建一个新md文件就好了</h4><p>最后发现是那个新建的文件的date写错了，copy成了前一个文件的内容</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/16/dailyCode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/16/dailyCode/" itemprop="url">日常用到的开发语句</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-16T21:15:54+08:00">
+                2019-12-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="copy文件从一个路径到另一个路径"><a href="#copy文件从一个路径到另一个路径" class="headerlink" title="copy文件从一个路径到另一个路径:"></a>copy文件从一个路径到另一个路径:</h5><p>cp -r 原来文件夹路径/  目标文件夹路径/</p>
+<h5 id="关于前端起服务："><a href="#关于前端起服务：" class="headerlink" title="关于前端起服务："></a>关于前端起服务：</h5><p>前端为什么要起服务？<br>为了解决跨域；直接通过浏览器打开是类似file:///的访问形式，即file协议，起服务运行在服务器环境才可能解决跨域问题。本地页面ajax()请求本地页面，须通过服务器环境运行<br>有什么方便的起服务的方法？<br>用http-server可以方便地起本地服务。<br>命令行：http-server -c -l</p>
+<h5 id="terminal更改文件夹性质的命令："><a href="#terminal更改文件夹性质的命令：" class="headerlink" title="terminal更改文件夹性质的命令："></a>terminal更改文件夹性质的命令：</h5><p>sudo chown -R userName:staff a「改变a文件夹的性质，从sudo改成userName用户就能操作」<br>ctrl+R+字符：搜索使用过的字符的语句，搜索完按右箭头即可定位到该语句<br>history：查找所有历史语句<br>grep:分组查找<br>ls -l：查看文件夹下所有文件，并展示读写权限<br>dig 域名：没接入cdn的域名可以查看域名对应的vip</p>
+<h5 id="cur测试页面（一定要带-I，不然返回的是html）："><a href="#cur测试页面（一定要带-I，不然返回的是html）：" class="headerlink" title="cur测试页面（一定要带-I，不然返回的是html）："></a>cur测试页面（一定要带-I，不然返回的是html）：</h5><p>curl -H ‘Host:页面host’ ‘http://具体vip/finance-gold/msjgold/homepage?orderSource=4’ -I<br>curl -H ‘Host:m.jdjygold.com’ ‘<a href="http://61.49.99.30/finance-gold/msjgold/homepage\?orderSource\=4&#39;" target="_blank" rel="noopener">http://61.49.99.30/finance-gold/msjgold/homepage\?orderSource\=4&#39;</a> -I<br>curl -v url可以用来测一个地址是否能正常访问(如果https证书不支持，会返回subjectAltName doses not match)</p>
+<h5 id="vue异步加载-import-在iphone5上面白屏的一个可能原因："><a href="#vue异步加载-import-在iphone5上面白屏的一个可能原因：" class="headerlink" title="vue异步加载(import) 在iphone5上面白屏的一个可能原因："></a>vue异步加载(import) 在iphone5上面白屏的一个可能原因：</h5><p>vue异步加载(import) 在iphone5上面白屏，原因是少引用了import ‘core-js/modules/es6.array.iterator’;，加上就可以了</p>
+<h5 id="几个有用的网站："><a href="#几个有用的网站：" class="headerlink" title="几个有用的网站："></a>几个有用的网站：</h5><p>测试页面性能的网站：<a href="http://www.mmtrix.com/evaluate/networkana/" target="_blank" rel="noopener">http://www.mmtrix.com/evaluate/networkana/</a><br>web开发笔记：<a href="https://xwenliang.cn/" target="_blank" rel="noopener">https://xwenliang.cn/</a><br>js算法与数据结构：<a href="https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md" target="_blank" rel="noopener">https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md</a><br>查兼容性的网站：<a href="https://caniuse.com/" target="_blank" rel="noopener">https://caniuse.com/</a></p>
+<h5 id="joyer-cli使用小技巧："><a href="#joyer-cli使用小技巧：" class="headerlink" title="joyer-cli使用小技巧："></a>joyer-cli使用小技巧：</h5><p>用import是异步加载，结合使用jsBundleRule可以把echart单独打包出来</p>
+<h5 id="查看使用了80端口的应用并关闭："><a href="#查看使用了80端口的应用并关闭：" class="headerlink" title="查看使用了80端口的应用并关闭："></a>查看使用了80端口的应用并关闭：</h5><p>sudo lsof -i tcp:80<br>sudo kill</p>
+<h5 id="flex布局不能显示点点点："><a href="#flex布局不能显示点点点：" class="headerlink" title="flex布局不能显示点点点："></a>flex布局不能显示点点点：</h5><p>给父级增加min-width:0</p>
+<h5 id="echart图加了swiper-no-swiping就不能点击了："><a href="#echart图加了swiper-no-swiping就不能点击了：" class="headerlink" title="echart图加了swiper-no-swiping就不能点击了："></a>echart图加了swiper-no-swiping就不能点击了：</h5><p>在最外层加@click时间，标记当前activeIndex，才处理好</p>
+<h5 id="用命令行生成文件夹的树状结构："><a href="#用命令行生成文件夹的树状结构：" class="headerlink" title="用命令行生成文件夹的树状结构："></a>用命令行生成文件夹的树状结构：</h5><p>1.安装tree brew install tree，<br>2.用命令tree -L 2 -I node_modules(显示两层，排除node-modules)；<br>一个小文章：<a href="https://www.cnblogs.com/richard-youth/p/6297827.html" target="_blank" rel="noopener">https://www.cnblogs.com/richard-youth/p/6297827.html</a></p>
+<h5 id="ios低版本手机滑动fixed按钮跟着滚动的问题："><a href="#ios低版本手机滑动fixed按钮跟着滚动的问题：" class="headerlink" title="ios低版本手机滑动fixed按钮跟着滚动的问题："></a>ios低版本手机滑动fixed按钮跟着滚动的问题：</h5><p>设置了-webkit-overflow-scrolling: touch;解决方法：body、html、wrap、content均设置width：100%，height：100%，在content上加webkit-overflow-scrolling: touch;既可以顺滑滚动，又可以fixed不跟随改动<br>——》引入其他问题：浏览器弹性滚动问题<br>把 -webkit-overflow-scrolling: touch;放在小div而不是放在body上的问题：快速上拉页面[还在弹性滑动的过程中]迅速得再向上拉，会出现页面整个被拉动的情况[上面是空白的样式]；拉动的问题和fixed+touch的问题无法同时解决，只能通过引入isScroll之类的问题解决<br>———》关联的问题：safari渲染问题<br>单页面应用画echart图的问题：从有echart的的页面跳入下一个页面[滑动一段距离之后]，再back的时候echart图出不来了。原因：body页面很长可以滑动，滑完点击跳入下一个页面，再返回的时候，页面渲染机制在把页面上滑之后就停止了，不会在echart图数据返回的时候渲染页面，因此白屏。如果把滑动限制在div里(body设置width:100%,height:100%)里可以解决这个问题。但是滑动限制div里会引起上面那个问题。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//解决单页面back回来不能渲染的问题</span><br><span class="line">       setTimeout(() =&gt; &#123;</span><br><span class="line">                window.scrollTo(0, 1);</span><br><span class="line">       &#125;, 100);</span><br></pre></td></tr></table></figure>
+
+<h5 id="ios8-4系统vue-history模式document-title在back回首页的时候无法设置上title："><a href="#ios8-4系统vue-history模式document-title在back回首页的时候无法设置上title：" class="headerlink" title="ios8.4系统vue history模式document.title在back回首页的时候无法设置上title："></a>ios8.4系统vue history模式document.title在back回首页的时候无法设置上title：</h5><p>经尝试使用iframe的hack方法可以解决。一定放在afterEach里！一定设置可正常访问的src！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">router.afterEach( (to,from)=&gt; &#123;</span><br><span class="line">    //埋点</span><br><span class="line">    <span class="keyword">if</span>( window.__qd__ &amp;&amp; window.__qd__.page)&#123;</span><br><span class="line">        window.__qd__.page(window.location.origin +to.fullPath);</span><br><span class="line">    &#125;</span><br><span class="line">     /* 设置页面title */</span><br><span class="line">     /* 路由发生变化修改页面title */</span><br><span class="line">     <span class="keyword">if</span> (to.meta &amp;&amp; to.meta.title) &#123;</span><br><span class="line">        document.title = to.meta.title;</span><br><span class="line">        //IOShack利用iframe的onload事件刷新页面</span><br><span class="line">          document.title = to.meta.title;</span><br><span class="line">          var iframe = document.createElement(<span class="string">'iframe'</span>);</span><br><span class="line">          iframe.style.visibility = <span class="string">'hidden'</span>;</span><br><span class="line">          iframe.style.width = <span class="string">'1px'</span>;</span><br><span class="line">          iframe.style.height = <span class="string">'1px'</span>;</span><br><span class="line">          iframe.src = <span class="string">'//m.jr.jd.com/favicon.ico'</span>; // 这里</span><br><span class="line">          iframe.onload = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">          setTimeout(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">              document.body.removeChild(iframe);</span><br><span class="line">          &#125;, 0);</span><br><span class="line">          &#125;;</span><br><span class="line">          document.body.appendChild(iframe);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="ios手机12-3-1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了："><a href="#ios手机12-3-1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了：" class="headerlink" title="ios手机12.3.1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了："></a>ios手机12.3.1版本，input弹起键盘的时候，没有把赎回的框给弹上去；监听focus事件能正常弹起了：</h5><p>cp -r 原来文件夹路径/  目标文件夹路径/</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'body'</span>).on(<span class="string">'focus'</span>,<span class="string">'.jrm-layout-area input'</span>,<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">          setTimeout(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">       document.body.scrollTop = document.body.scrollHeight;</span><br><span class="line">     &#125;,200)</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="vue项目起服务提示There-are-multiple-modules-with-names-that-only-differ-in-casing"><a href="#vue项目起服务提示There-are-multiple-modules-with-names-that-only-differ-in-casing" class="headerlink" title="vue项目起服务提示There are multiple modules with names that only differ in casing"></a>vue项目起服务提示There are multiple modules with names that only differ in casing</h5><p>引入的文件路径大小写不对；如import A from “a” –》import A from “A”</p>
+<h5 id="vue项目transition和keep-alive"><a href="#vue项目transition和keep-alive" class="headerlink" title="vue项目transition和keep-alive"></a>vue项目transition和keep-alive</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"oneId"</span>&gt;</span><br><span class="line">        &lt;transition name=<span class="string">"onePage"</span> mode=<span class="string">"page-out-in"</span>&gt;</span><br><span class="line">            &lt;keep-alive&gt;</span><br><span class="line">                    &lt;router-view  v-if=<span class="string">"<span class="variable">$route</span>.meta.keepAlive"</span>&gt;&lt;/router-view&gt;  </span><br><span class="line">            &lt;/keep-alive&gt;</span><br><span class="line">        &lt;/transition&gt;</span><br><span class="line">        &lt;transition name=<span class="string">"onePage"</span> mode=<span class="string">"page-out-in"</span>&gt;</span><br><span class="line">            &lt;router-view  v-if=<span class="string">"!<span class="variable">$route</span>.meta.keepAlive"</span> :key=<span class="string">"'time'+new Date().getTime()"</span>&gt;&lt;/router-view&gt;</span><br><span class="line">         &lt;/transition&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/PlatForm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/11/PlatForm/" itemprop="url">IosPlatForm</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-11T23:25:57+08:00">
+                2019-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Iphone设备的设备类型对应关系"><a href="#Iphone设备的设备类型对应关系" class="headerlink" title="Iphone设备的设备类型对应关系"></a>Iphone设备的设备类型对应关系</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">- (NSString *_Nonnull)identifier &#123;</span><br><span class="line">    struct utsname systemInfo;</span><br><span class="line">    uname(&amp;systemInfo);</span><br><span class="line">    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"x86_64"</span>])     <span class="built_in">return</span> @<span class="string">"Simulator"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"i386"</span>])       <span class="built_in">return</span> @<span class="string">"Simulator"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone1,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone1,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 3G"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone2,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 3GS"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone3,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 4"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone3,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 4"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone3,3"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 4"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone4,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 4S"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone5,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 5"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone5,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 5c"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone5,3"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 5c"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone5,4"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 5c"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone6,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 5s"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone6,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 5s"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone7,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 6 Plus"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone7,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 6"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone8,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 6s"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone8,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 6s Plus"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone8,4"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone SE"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone9,1"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 7"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone9,3"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 7"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone9,2"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 7 Plus"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone9,4"</span>])  <span class="built_in">return</span> @<span class="string">"iPhone 7 Plus"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone10,1"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 8"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone10,4"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 8"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone10,2"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 8 Plus"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone10,5"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 8 Plus"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone10,3"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone X"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone10,6"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone X"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone11,2"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone XS"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone11,4"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone XS Max"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone11,6"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone XS Max"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone11,8"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone XR"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone12,1"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 11"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone12,3"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 11 Pro"</span>;</span><br><span class="line">    <span class="keyword">if</span> ([platform isEqualToString:@<span class="string">"iPhone12,5"</span>]) <span class="built_in">return</span> @<span class="string">"iPhone 11 Pro Max"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">return</span> platform;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参考文章<br>iPhone identifier对应设备类型: <a href="https://blog.csdn.net/Yj_sail/article/details/78297745" target="_blank" rel="noopener">https://blog.csdn.net/Yj_sail/article/details/78297745</a><br>iPhone产品的内部编号与机型对应: <a href="http://blog.loadata.com/iphonechan-pin-de-nei-bu-bian-hao-yu-ji-xing-dui-ying/" target="_blank" rel="noopener">http://blog.loadata.com/iphonechan-pin-de-nei-bu-bian-hao-yu-ji-xing-dui-ying/</a></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BAHexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/11/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BAHexo/" itemprop="url">如何建立一个Hexo博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-11T21:15:54+08:00">
+                2019-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="常用语句"><a href="#常用语句" class="headerlink" title="常用语句"></a>常用语句</h4> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo g   //生成静态页面</span><br><span class="line">hexo s   //本地运行</span><br><span class="line">hexo new page.md //新建page</span><br><span class="line">hexo clean //清除现有静态页面</span><br><span class="line">hexo d   //部署到git</span><br></pre></td></tr></table></figure>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>Hexo github搭建博客: <a href="https://myfire2014.github.io/" target="_blank" rel="noopener">https://myfire2014.github.io/</a><br>如何设置电脑和github的链接: <a href="https://www.jianshu.com/p/5095b1e81d40" target="_blank" rel="noopener">https://www.jianshu.com/p/5095b1e81d40</a><br>用github建立自己的博客: <a href="https://blog.csdn.net/chengde6896383/article/details/85098814" target="_blank" rel="noopener">https://blog.csdn.net/chengde6896383/article/details/85098814</a><br>deploy失败: <a href="https://blog.csdn.net/jingtingfengguo/article/details/51892864" target="_blank" rel="noopener">https://blog.csdn.net/jingtingfengguo/article/details/51892864</a></p>
+<h3 id="自己建立过程中遇到的问题"><a href="#自己建立过程中遇到的问题" class="headerlink" title="自己建立过程中遇到的问题"></a>自己建立过程中遇到的问题</h3><h6 id="向https-github-com-settings-keys上粘贴ssh-keys的时候要粘贴-pub的"><a href="#向https-github-com-settings-keys上粘贴ssh-keys的时候要粘贴-pub的" class="headerlink" title="向https://github.com/settings/keys上粘贴ssh keys的时候要粘贴.pub的"></a>向<a href="https://github.com/settings/keys上粘贴ssh" target="_blank" rel="noopener">https://github.com/settings/keys上粘贴ssh</a> keys的时候要粘贴.pub的</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Users/tianteng/.ssh  id_rsa.pub</span><br></pre></td></tr></table></figure>
+<h6 id="需要查看自己的git-config，不对的话需要重新设置"><a href="#需要查看自己的git-config，不对的话需要重新设置" class="headerlink" title="需要查看自己的git config，不对的话需要重新设置"></a>需要查看自己的git config，不对的话需要重新设置</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global --list</span><br><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"email@email.com"</span></span><br></pre></td></tr></table></figure>
+<h6 id="修改完代码push没有反应"><a href="#修改完代码push没有反应" class="headerlink" title="修改完代码push没有反应"></a>修改完代码push没有反应</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">删除.deploy_git的文件夹里面的内容，这个是前面的主机生成的网站项目内容，与当前的不兼容。</span><br><span class="line">hexo clean</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h6 id="一直deploy失败，最后发现是repo地址写错了-一定要是-git-github-com-YourGitHubName-YourGitHubName-github-io-git"><a href="#一直deploy失败，最后发现是repo地址写错了-一定要是-git-github-com-YourGitHubName-YourGitHubName-github-io-git" class="headerlink" title="一直deploy失败，最后发现是repo地址写错了,一定要是 git@github.com:YourGitHubName/YourGitHubName.github.io.git"></a>一直deploy失败，最后发现是repo地址写错了,一定要是 <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:YourGitHubName/YourGitHubName.github.io.git</h6><h3 id="最终创建的自己博客的地址"><a href="#最终创建的自己博客的地址" class="headerlink" title="最终创建的自己博客的地址:"></a>最终创建的自己博客的地址:</h3><p><a href="https://tiannatian.github.io/" target="_blank" rel="noopener">https://tiannatian.github.io/</a></p>
+<h5 id="用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题："><a href="#用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题：" class="headerlink" title="用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题："></a>用的Next主题，刚起服务的时候发现首页、归档、日志跳转有问题：</h5><p>首页：themes/next/_config.yml里面的menu:home，设置路由不能带空格，空格会造成跳转路由带个20%，导致无法跳转<br>归档、日志：themes/next/_config.yml里面的menu:archives，去掉“ || archives”部分，归档直接用了这个路由，会带上空格；<br>日志(themes/next/layout/_macro/sidebar.swig)用到了href=url_for(theme.menu.archives).split(‘||’)[0] | trim，导致路由跳错</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives).split('||')[0] | trim &#125;&#125;"</span>&gt;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TiannaTian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/11/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-11T21:10:29+08:00">
+                2019-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">TiannaTian</p>
+              <p class="site-description motion-element" itemprop="description">开发过程中遇到一些问题，记录下来防止遗忘</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TiannaTian</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
